@@ -1,0 +1,6 @@
+interface:
+  display_name: "Bottleneck"
+  short_description: "Finish one production slice at a time"
+  default_prompt: "Use $bottleneck to finish one production slice deeply before advancing."
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"

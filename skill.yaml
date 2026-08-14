@@ -1,0 +1,14 @@
+name: bottleneck
+version: 1.0.0
+title: Bottleneck
+tagline: AI-Native WIP-Constrained Production Protocol
+entrypoint: skills/bottleneck/SKILL.md
+command: /bottleneck
+runtime:
+  required: []
+  optional:
+    - python>=3.10
+principles:
+  - "Production WIP Limit = 1"
+  - "Parallelize uncertainty. Serialize commitment."
+  - "Sketch wide. Build narrow. Finish deep. Freeze. Reuse. Advance."

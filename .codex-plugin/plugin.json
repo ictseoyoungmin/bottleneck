@@ -1,0 +1,26 @@
+{
+  "name": "bottleneck",
+  "version": "1.0.0",
+  "description": "AI-native production discipline with a one-slice WIP limit.",
+  "repository": "https://github.com/ictseoyoungmin/bottleneck",
+  "author": {
+    "name": "Bottleneck maintainers"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Bottleneck",
+    "shortDescription": "AI-native production discipline with one active slice.",
+    "longDescription": "Bottleneck helps AI agents keep work in progress constrained, identify the active bottleneck, and move one slice through production at a time.",
+    "developerName": "Bottleneck maintainers",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Write"
+    ],
+    "defaultPrompt": [
+      "Apply the Bottleneck workflow to this task.",
+      "Identify the active bottleneck and next slice.",
+      "Review this work for WIP discipline."
+    ]
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "name": "bottleneck",
+  "version": "1.0.0",
+  "description": "AI-native production discipline with a one-slice WIP limit.",
+  "author": {
+    "name": "Bottleneck maintainers"
+  }
+}

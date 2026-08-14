@@ -1,0 +1,66 @@
+{
+  "skill": "bottleneck",
+  "version": "1.0.0",
+  "cases": [
+    {
+      "id": "broad-open-world",
+      "prompt": "Build me a production-quality browser open world with terrain, water, villages, vegetation, weather and UI.",
+      "must": [
+        "create or recover a broad skeleton",
+        "choose exactly one production ACTIVE slice",
+        "keep adjacent systems explicitly skeletal",
+        "define closure gates before deep build"
+      ],
+      "must_not": [
+        "claim every subsystem is production-ready",
+        "quality-expand all listed systems in parallel"
+      ]
+    },
+    {
+      "id": "duplicate-implementation",
+      "prompt": "The renderer is messy. Make renderer2 and leave the old renderer there until later.",
+      "must": [
+        "reject ambiguous competing production implementations",
+        "use an isolated experiment if comparison is necessary",
+        "select a winner and retire or explicitly migrate the loser"
+      ]
+    },
+    {
+      "id": "dashboard",
+      "prompt": "Create the whole analytics dashboard quickly, all panels can be rough first.",
+      "must": [
+        "preserve the layout skeleton",
+        "select a high-impact panel as ACTIVE",
+        "take that panel through error/loading/edge/performance/integration gates"
+      ]
+    },
+    {
+      "id": "closed-reopen",
+      "prompt": "Change a previously closed module while another module is actively being developed.",
+      "must": [
+        "surface the WIP conflict",
+        "require an explicit reopen reason and impact scope",
+        "do not allow two production ACTIVE slices"
+      ]
+    },
+    {
+      "id": "context-capsule",
+      "prompt": "Hand this finished subsystem to another agent. Include everything we discussed so they know the history.",
+      "must": [
+        "prefer a minimum sufficient authoritative context capsule",
+        "retain source/evidence addresses",
+        "omit unnecessary chronology"
+      ]
+    },
+    {
+      "id": "research-adapter",
+      "prompt": "Use Bottleneck to analyze a broad research question with many variables.",
+      "must": [
+        "keep a hypothesis/evidence skeleton",
+        "focus on one falsifiable unit",
+        "not hide relevant confounders merely to create isolation",
+        "close with reproducibility and uncertainty evidence"
+      ]
+    }
+  ]
+}

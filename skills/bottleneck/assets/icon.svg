@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-labelledby="title desc" focusable="false" shape-rendering="geometricPrecision">
+  <title id="title">Bottleneck icon</title>
+  <desc id="desc">A blueprint drawing of a single bottleneck: a wide channel narrowing to one dimensioned neck.</desc>
+
+  <defs>
+    <linearGradient id="bg" x1="60" y1="48" x2="452" y2="464" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1f4a86"/>
+      <stop offset="1" stop-color="#122c54"/>
+    </linearGradient>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" fill="none" stroke="#bcd6ff" stroke-width="0.75" opacity="0.14"/>
+    </pattern>
+    <pattern id="gridMajor" width="96" height="96" patternUnits="userSpaceOnUse">
+      <path d="M96 0H0V96" fill="none" stroke="#bcd6ff" stroke-width="1" opacity="0.22"/>
+    </pattern>
+    <clipPath id="cardClip"><rect x="48" y="48" width="416" height="416" rx="64"/></clipPath>
+  </defs>
+
+  <rect x="48" y="48" width="416" height="416" rx="64" fill="url(#bg)"/>
+
+  <g clip-path="url(#cardClip)">
+    <rect x="48" y="48" width="416" height="416" fill="url(#grid)"/>
+    <rect x="48" y="48" width="416" height="416" fill="url(#gridMajor)"/>
+  </g>
+
+  <rect x="50" y="50" width="412" height="412" rx="62" fill="none" stroke="#bcd6ff" stroke-width="2" opacity="0.55"/>
+
+  <!-- vertical height dimension line, left of the bottle -->
+  <g stroke="#bcd6ff" stroke-width="1.5" opacity="0.55" fill="none">
+    <line x1="120" y1="118" x2="120" y2="394"/>
+    <path d="M114 124 120 118 126 124"/>
+    <path d="M114 388 120 394 126 388"/>
+    <line x1="108" y1="118" x2="132" y2="118"/>
+    <line x1="108" y1="394" x2="132" y2="394"/>
+  </g>
+
+  <!-- the bottleneck: one solid silhouette, wide top and bottom, pinched waist -->
+  <path d="M156 116
+           L356 116
+           Q372 116 372 132
+           C372 186 300 201 296 256
+           C300 311 372 326 372 380
+           Q372 396 356 396
+           L156 396
+           Q140 396 140 380
+           C140 326 212 311 216 256
+           C212 201 140 186 140 132
+           Q140 116 156 116 Z"
+        fill="#f4f9ff" stroke="#0c2a52" stroke-width="3" stroke-linejoin="round"/>
+
+  <!-- neck gadget: the one hexagon marking the bottleneck point -->
+  <polygon points="256,222 285,239 285,273 256,290 227,273 227,239"
+           fill="#123f73" stroke="#0a315f" stroke-width="3" stroke-linejoin="round"/>
+</svg>

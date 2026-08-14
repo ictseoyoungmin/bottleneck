@@ -1,0 +1,29 @@
+{
+  "name": "bottleneck",
+  "version": "1.0.0",
+  "payload": "skills/bottleneck",
+  "entrypoint": "skills/bottleneck/SKILL.md",
+  "discovery": {
+    "skills_cli": "skills/bottleneck/SKILL.md",
+    "codex": ".agents/skills/bottleneck/SKILL.md",
+    "claude_code": ".claude/skills/bottleneck/SKILL.md"
+  },
+  "files": [
+    "skills/bottleneck/SKILL.md",
+    "skills/bottleneck/agents/openai.yaml",
+    "skills/bottleneck/assets/icon.svg",
+    "skills/bottleneck/references/",
+    "skills/bottleneck/scripts/",
+    "skills/bottleneck/templates/"
+  ],
+  "development_files": [
+    "README.md",
+    "CHANGELOG.md",
+    "MANIFEST.json",
+    "skill.yaml",
+    ".claude-plugin/",
+    "evals/",
+    "examples/",
+    "tests/"
+  ]
+}

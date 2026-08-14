@@ -1,0 +1,16 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "bottleneck",
+  "description": "A portable AI-native production protocol for finishing one work slice at a time.",
+  "owner": {
+    "name": "Bottleneck maintainers"
+  },
+  "plugins": [
+    {
+      "name": "bottleneck",
+      "source": "./",
+      "description": "AI-native production discipline with a one-slice WIP limit.",
+      "version": "1.0.0"
+    }
+  ]
+}
