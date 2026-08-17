@@ -56,6 +56,11 @@ This repository also includes a Claude marketplace and plugin manifest:
 /plugin install bottleneck@bottleneck
 ```
 
+Marketplace installation uses `skills/bottleneck/` as the plugin source, so the
+installed plugin contains the runtime payload instead of repository docs, tests,
+or evals. Claude Code plugin skills are namespaced; invoke this install as
+`/bottleneck:bottleneck`.
+
 Validate a local checkout with:
 
 ```bash

@@ -30,7 +30,10 @@ class PackageLayoutTests(unittest.TestCase):
         )
 
         self.assertEqual(plugin["name"], "bottleneck")
-        self.assertEqual(marketplace["plugins"][0]["source"], "./")
+        claude_plugin = marketplace["plugins"][0]
+        self.assertEqual(claude_plugin["source"], "./skills/bottleneck")
+        self.assertEqual(claude_plugin["skills"], ["./"])
+        self.assertFalse(claude_plugin["strict"])
 
     def test_icon_is_vector_and_text_free(self):
         icon = (ROOT / "skills" / "bottleneck" / "assets" / "icon.svg").read_text(

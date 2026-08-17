@@ -8,9 +8,13 @@
   "plugins": [
     {
       "name": "bottleneck",
-      "source": "./",
+      "source": "./skills/bottleneck",
       "description": "AI-native production discipline with a one-slice WIP limit.",
-      "version": "1.0.0"
+      "version": "1.0.1",
+      "strict": false,
+      "skills": [
+        "./"
+      ]
     }
   ]
 }
