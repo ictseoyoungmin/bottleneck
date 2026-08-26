@@ -2,6 +2,8 @@
 
 Closure is a predeclared measurable contract.
 
+Passing every declared gate is necessary but not sufficient for closure. If direct inspection shows that the artifact remains materially below the target quality, keep the slice `ACTIVE` or `REOPEN` it. Do not use gate completion to overrule obvious whole-artifact quality or correctness failures.
+
 Choose only gates relevant to the slice, but do not omit a gate merely because it is inconvenient.
 
 ## General gates
