@@ -30,6 +30,17 @@ Exploratory spikes are allowed only when they are disposable, isolated, clearly 
 
 You may explore multiple approaches cheaply. You may not keep multiple competing production implementations alive.
 
+## Non-negotiable guardrails
+
+1. Bottleneck is a **development workflow**, not a product architecture or runtime design principle. Never reshape code or architecture merely to mirror slices, `ACTIVE`/`CLOSED`/`REOPENED` states, or WIP bookkeeping. The workflow follows the product architecture; the product architecture does not follow the workflow bookkeeping.
+2. **Macro correctness comes first.** Do not descend into detail while the overall silhouette, major relationships, core behavior, or primary UX is still wrong. Reopen upstream work when its premise fails.
+3. Slice boundaries are pragmatic, not doctrinal. **Keep tightly coupled work together** when separating it would reduce whole-system quality.
+4. **Closure gates are necessary, not sufficient.** Passing tests, checklists, screenshots, metrics, or QA gates does not justify closure if the artifact itself is still below target quality.
+5. Prefer **construction → observation → correction → validation**. Verification supports production; it must not become a substitute for producing the right result.
+6. Work on the **highest-impact remaining bottleneck**. Stop polishing when an issue no longer materially limits perceived or actual quality.
+
+These guardrails override slice bookkeeping, gate completion, and local optimization when those mechanisms conflict with the quality or correctness of the whole artifact.
+
 ## When activated
 
 For a broad request, do **not** implement the whole request shallowly.
