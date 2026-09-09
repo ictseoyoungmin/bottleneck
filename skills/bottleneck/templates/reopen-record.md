@@ -1,18 +1,27 @@
-# REOPEN Record — <slice>
+# REOPEN Record — <closed bottleneck>
 
 ## Reason
 
-## Triggering evidence or requirement change
+## Triggering evidence / requirement / quality failure
 
-## Contract surface affected
+## Premise or target-quality claim invalidated
 
-## Migration / regression risk
+## Affected scope
 
-## What remains authoritative
+<!-- Include upstream/downstream implications without automatically expanding the ACTIVE scope to everything affected. -->
 
-## Updated Definition of Closed
+## What may change
+
+## What remains authoritative / intentionally untouched
+
+## Regression / migration / downstream risk
+
+## Updated CLOSED WHEN
 
 ## Required WIP action
 
-- [ ] No other production slice is ACTIVE.
-- [ ] This slice now occupies the single ACTIVE slot.
+- [ ] No other production bottleneck is ACTIVE.
+- [ ] This reopened bottleneck now occupies the single ACTIVE slot.
+- [ ] Affected downstream CLOSED work is marked for revalidation when its premise may have changed.
+
+> CLOSED is stable enough to depend on, not immutable. Reopen upstream work when new evidence shows that its premise or quality claim was wrong.
