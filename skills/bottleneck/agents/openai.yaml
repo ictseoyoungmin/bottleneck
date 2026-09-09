@@ -1,6 +1,6 @@
 interface:
   display_name: "Bottleneck"
-  short_description: "Finish one production slice at a time"
-  default_prompt: "Use $bottleneck to finish one production slice deeply before advancing."
+  short_description: "Harden one dominant bottleneck at a time"
+  default_prompt: "Use $bottleneck as a production workflow: keep the whole artifact visible, solve the highest-impact dominant bottleneck with the smallest coherent scope, close only at target quality, and reopen upstream work when evidence invalidates it."
   icon_small: "./assets/icon.svg"
   icon_large: "./assets/icon.svg"
