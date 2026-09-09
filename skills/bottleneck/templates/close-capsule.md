@@ -1,33 +1,41 @@
-# CLOSED Capsule — <slice>
+# CLOSED Capsule — <bottleneck>
 
 Closed at: <timestamp/version>
 
-## Responsibility
+## Dominant problem resolved
 
-## Public surface
+## CLOSED WHEN result
 
-## Authoritative inputs
+<!-- State why the actual artifact reached the declared target quality. -->
 
-## Outputs / artifacts
+## Authoritative outputs / artifact locations
 
-## Invariants
+## Required inputs / references
 
-## Ownership boundaries
+## Invariants / important relationships
 
-## Budgets
+## Stable upstream constraints
+
+## Budgets / quality targets
 
 ## Evidence
 
-- Tests/evals:
-- Demo/fixture:
-- Visual/performance evidence:
+- Direct artifact inspection:
+- Tests/evals, if applicable:
+- Render/reference comparison, if applicable:
+- Demo/fixture/export/downstream use:
+- Performance evidence, if applicable:
 
 ## Known limitations
 
-## Integration notes
+## Integration / downstream notes
 
 ## Reopen conditions
+
+<!-- Include premise failures, macro-quality regressions, and new evidence that would invalidate closure. -->
 
 ## Authoritative source locations
 
 <!-- Keep addresses; do not duplicate implementation history. -->
+
+> Evidence supports closure; it does not replace the requirement that the actual artifact reached target quality.
