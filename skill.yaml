@@ -1,7 +1,7 @@
 name: bottleneck
 version: 1.0.0
 title: Bottleneck
-tagline: AI-Native WIP-Constrained Production Protocol
+tagline: AI-Native WIP-Constrained Production Workflow
 entrypoint: skills/bottleneck/SKILL.md
 command: /bottleneck
 runtime:
@@ -9,6 +9,9 @@ runtime:
   optional:
     - python>=3.10
 principles:
-  - "Production WIP Limit = 1"
-  - "Parallelize uncertainty. Serialize commitment."
-  - "Sketch wide. Build narrow. Finish deep. Freeze. Reuse. Advance."
+  - "Production WIP Limit = 1 dominant bottleneck"
+  - "Workflow bookkeeping never dictates artifact architecture"
+  - "Macro correctness before micro detail"
+  - "One dominant problem × the smallest coherent scope needed to solve it"
+  - "Construction → observation → correction → validation"
+  - "Close on target quality; reopen when evidence invalidates closure"

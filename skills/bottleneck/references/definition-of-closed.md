@@ -1,45 +1,65 @@
 # Definition of Closed
 
-Closure is a predeclared measurable contract.
+Closure is a **predeclared target-quality condition**, supported by relevant evidence.
 
-Passing every declared gate is necessary but not sufficient for closure. If direct inspection shows that the artifact remains materially below the target quality, keep the slice `ACTIVE` or `REOPEN` it. Do not use gate completion to overrule obvious whole-artifact quality or correctness failures.
+Before deep work, declare:
 
-Choose only gates relevant to the slice, but do not omit a gate merely because it is inconvenient.
+```text
+CHANGE: <what may change>
+DO NOT CHANGE: <what stays outside this bottleneck>
+CLOSED WHEN: <observable state that represents target quality>
+```
 
-## General gates
+Choose only gates relevant to the bottleneck, but do not omit a gate merely because it is inconvenient.
+
+## Quality outranks gate completion
+
+Tests, checklists, screenshots, renders, comparison boards, metrics, benchmarks, and QA reports are evidence. They are **necessary where useful, but never sufficient by themselves**.
+
+Do not close work when the actual artifact is visibly, behaviorally, structurally, scientifically, or operationally below the declared target quality.
+
+If the local gates pass but a macro premise is wrong, reopen the responsible upstream work instead of preserving local closure.
+
+## General evidence gates
 
 - **Correctness** — specified behavior and invariants hold.
-- **Edge states** — error, empty, loading, malformed, extreme, or degraded states are handled.
-- **Performance** — relevant latency, CPU, GPU, memory, throughput, or size budgets are measured.
-- **Public contract** — stable inputs, outputs, and ownership.
-- **Integration** — smoke-tested through the real skeleton boundary.
+- **Whole-artifact fit** — the bottleneck no longer violates known macro relationships or upstream premises.
+- **Edge states** — relevant error, empty, loading, malformed, extreme, or degraded states are handled.
+- **Performance** — relevant latency, CPU, GPU, memory, throughput, or size budgets are measured where material.
+- **Integration** — exercised through the real artifact boundary where applicable.
 - **Verification** — unit/integration/E2E/eval/simulation checks appropriate to the domain.
-- **Documentation** — use, limitations, and key design decisions.
-- **Duplication** — no second active implementation for the same responsibility.
-- **Orphan/dead paths** — superseded routes/files/adapters retired where safely demonstrable.
-- **Independent value** — demo, fixture, notebook, reproducible case, library, or asset where practical.
-- **Context capsule** — next agent can use the slice without loading internal history.
+- **Documentation/context** — use, limitations, important assumptions, and reopen conditions are recorded.
+- **Duplication** — no ambiguous second active production path for the same responsibility where applicable.
+- **Orphan/dead paths** — superseded routes/files/adapters/assets are retired where safely demonstrable.
+- **Independent value** — demo, fixture, notebook, reproducible case, library, render set, or asset where practical.
+- **Context capsule** — the next agent can use the result without loading unnecessary internal history.
 
-## Visual/interactive additions
+## Visual / 3D / interactive additions
 
-- representative screenshots/render captures,
-- interaction states,
-- responsive/camera/viewpoint coverage,
-- visual regression/reference comparison,
-- frame-time and draw/memory budget.
+- macro silhouette/proportion/pose or primary UX is not knowingly wrong,
+- representative actual renders/viewports/screenshots,
+- authoritative-reference comparison where available,
+- required camera/viewpoint coverage,
+- interaction/animation/rig/export states where relevant,
+- penetration/clearance/topology/material checks only when they materially affect the target,
+- frame-time, draw, memory, or asset-size budget where relevant.
 
-## Research/data additions
+A dense QA board does not compensate for an inaccurate mesh, wrong pose, broken interaction, or poor visual read.
+
+## Research / data additions
 
 - assumptions declared,
 - provenance recorded,
 - reproducible analysis,
 - falsification or counter-evidence considered,
-- uncertainty reported.
+- uncertainty reported,
+- the claim matches the actual strength of evidence rather than pipeline completion.
 
-## Business/strategy additions
+## Business / strategy additions
 
 - measurable hypothesis,
 - source/evidence traceability,
 - constraint realism,
 - decision rule for adoption/rejection,
-- explicit unknowns.
+- explicit unknowns,
+- decision quality rather than deck/report completeness.
