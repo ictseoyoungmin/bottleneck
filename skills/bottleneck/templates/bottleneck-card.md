@@ -1,40 +1,51 @@
-# Bottleneck Card — <slice>
+# Bottleneck Card — <dominant problem>
 
 Status: ACTIVE
 
-## Responsibility
+## Dominant problem
 
-## Why this slice now
+## Why this bottleneck now
 
 - Impact (1–5):
 - Uncertainty (1–5):
 - Reusability (1–5):
-- Dependency override, if any:
+- Macro/dependency override, if any:
 
-## Inputs
+## Coherent scope
 
-## Outputs
+<!-- Smallest set of tightly coupled causes that must move together to solve the problem. This does not need to match a module, mesh object, scene node, or single capability. -->
 
-## Frozen contracts touched
+## CHANGE
 
-## Explicit non-goals
+<!-- What may change in this hardening pass? -->
 
-<!-- List adjacent modules that must remain SKELETON. -->
+## DO NOT CHANGE
 
-## Definition of Closed
+<!-- Stable adjacent areas intentionally outside scope. -->
 
-- [ ] Correctness
-- [ ] Edge/error states
-- [ ] Performance budget
-- [ ] Public API stability
-- [ ] Integration smoke test
-- [ ] Automated verification
-- [ ] Documentation / ADR
-- [ ] Duplicate implementation check
-- [ ] Orphan/dead path check
-- [ ] Independent demo / fixture where practical
-- [ ] Context capsule
+## Upstream assumptions / authoritative references
+
+## CLOSED WHEN
+
+<!-- Observable target-quality condition. Gate completion alone is not enough. -->
+
+## Relevant evidence gates
+
+Select only what matters:
+
+- [ ] Actual artifact reaches declared target quality
+- [ ] Macro relationships / upstream premises remain valid
+- [ ] Correctness / behavior
+- [ ] Edge/error/extreme states
+- [ ] Visual/reference comparison
+- [ ] Performance / budget
+- [ ] Real integration / export / downstream use
+- [ ] Automated verification where appropriate
+- [ ] Duplicate / obsolete production path check
+- [ ] Documentation / context capsule
+
+## Construction → observation → correction notes
 
 ## Evidence locations
 
-## Next gate
+## Next target-quality gate
