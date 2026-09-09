@@ -1,36 +1,46 @@
-# System Sketch
+# Whole-Artifact Sketch
 
 ## Objective
 
 <!-- What is the complete ambition? Keep this broad but concise. -->
 
-## Canonical owners
+## Macro shape / primary experience
 
-| Responsibility | Authoritative owner | Consumers |
+<!-- Overall silhouette, major behavior, information hierarchy, composition, research claim shape, or equivalent whole-artifact view. -->
+
+## Authoritative references / owners
+
+| Responsibility or evidence | Authoritative source | Dependents / consumers |
 |---|---|---|
 | | | |
 
-## Major modules
+## Major parts / relationships
 
-| Module | State | Public contract | Notes |
+| Part / domain | Current state | Key relationship or constraint | Notes |
 |---|---|---|---|
 | | SKELETON | | |
 
-## Data / control flow
+## Critical flows / relationships
 
 ```text
-<source> -> <owner> -> <consumer>
+<source / cause / part> -> <relationship> -> <consumer / effect / part>
 ```
 
-## Frozen cross-cutting conventions
+## Upstream assumptions that can invalidate deep work
 
-- Coordinate/unit system:
-- Time/clock semantics:
-- Lifecycle:
-- Persistence/versioning:
-- Error semantics:
-- Performance envelope:
+<!-- Include only what matters for this project. Examples: -->
 
-## Architecture-invalidating unknowns
+- Product/runtime architecture already authoritative:
+- Coordinate / scale / unit system:
+- Time / lifecycle semantics:
+- Reference registration / comparison camera / FOV:
+- Macro proportions / pose / composition:
+- Dataset / hypothesis / metric definitions:
+- Performance / quality envelope:
+- Other hard constraints:
 
-- None / list disposable spikes required before production.
+## Material unknowns
+
+- None / list disposable spikes or observations required before deep production.
+
+> This sketch is workflow context. Do not reshape product architecture, scene structure, mesh hierarchy, file layout, or artifact topology merely to match this document.
